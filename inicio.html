@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La mundial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Css/bootstrap.min.css">
+<link rel="stylesheet" href="Css/w3.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="inicio.html" class="w3-bar-item w3-button">INICIO</a>
+    <a href="historia.html" class="w3-bar-item w3-button">HISTORIA</a>
+    <a href="servicios.html" class="w3-bar-item w3-button">SERVICIOS</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contactos</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Nuevosproductos</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribete</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+<!-- Aqui iniciamos a elaborar el carrusel, con este código insertamos button de desplazamiento en la parte baja del carrusel *---*  -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
+          aria-label="slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active"
+          aria-label="Slide 3"></button>
+  </div>
+
+  <!--Aqui procedemos a insertar la imagenes -->
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="slide/1.png" class="d-block w-100 dp-lg">
+      </div>
+      <div class="carousel-item">
+          <img src="slide/2.png" class="d-blockw-100 dp-lg">
+
+      </div>
+      <div class="carousel-item">
+          <img src="slide/3.png" class="d-block w-100 dp-lg">
+      </div>
+  </div>
+
+  <!--Aqui procedemos a insertar los <> en la derecha y izquierda de para ver cada banner -->
+
+  
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">INICIE</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">SIGA</span>
+  </button>
+</div>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:250px">
+
+  
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="img/1.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="w3-hide-small">tienda 2024</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Tienda</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="img/arnesdeseguridad.jpeg" style="width:100%">
+        <p>Arnes de seguridad<br><b>L1500.00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="img/capotedepvc.jpeg" style="width:100%">
+        <p>Capote de pvc<br><b>L599.00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="img/cepillodealambre.jpeg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Cepillo de alambre<br><b>L140.00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="img/cepillodemadera.jpeg" style="width:100%">
+        <p>cepillo de madera<br><b>L399.00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="img/cintametrica.jpeg" style="width:100%">
+        <p>Cinta metrica<br><b>L600.00</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="img/Destornillador inalambrico.jpeg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Desatornillador inalambrico<br><b class="w3-text-red">L499.00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="img/fajadeamarrar.jpeg" style="width:100%">
+        <p>Faja de amarrar<br><b>L250.00</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="img/llavedelavavo.jpeg" style="width:100%">
+        <p>Llave de lavado<br><b>L500.00</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Suscribirse</h1>
+    <p>Para nuestros clientes mas epeciales:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Suscribirse</button>
+  </div>
+  
+  <!-- Footer -->
+  <center>
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contacto</h4>
+        <p>Formulario</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Persona" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+        </form>
+      </div>
+  </center>
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h3>La mejor ferreteria de todas</h3>
+            <p>
+              
+              !Queremos tomar un momento para agradecerles por ser una parte fundamental de nuestra comunidad. En Ferretería La Mundial, cada uno de ustedes es una pieza clave en nuestro éxito, y estamos aquí para ofrecerles el mejor servicio y los productos más confiables para que sus proyectos se hagan realidad.
+              
+              Cada vez que visitan nuestra tienda, no solo están comprando herramientas y materiales, están invirtiendo en sus sueños y en sus hogares. Ya sea que estén reparando, renovando o construyendo, queremos que sepan que pueden contar con nosotros para encontrar todo lo que necesitan con la mejor calidad y al mejor precio.
+            </p>
+            <p><a href="inicio.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Inicio</a></p>
+        </div>
+        <div class="w3-col m6">
+          <iframe width="450" height="300" src="https://www.youtube.com/embed/itXwrPFTJ5w" title="Ven ya a La Ferretería de los Hondureños" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Hecho por<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> Elder Solis</a>
+    <br>
+    <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+  </div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

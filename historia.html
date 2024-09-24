@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HISTORIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <h3 class="w3-wide"><b>LOGO</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="inicio.html" class="w3-bar-item w3-button">INICIO</a>
+      <a href="historia.html" class="w3-bar-item w3-button">HISTORIA</a>
+      <a href="servicios.html" class="w3-bar-item w3-button">SERVICIOS</a>
+    </div>
+    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contactos</a> 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Nuevosproductos</a> 
+    <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribete</a>
+  </nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <center><h1 class="w3-text-teal">¿Quienes Somos?</h1></center>
+      <p>En Proveedora Ferretera La Mundial, S.A. de C.V., somos una empresa que cuenta con más de 25 años de trayectoria en el mercado con ventas a industria y mostrador.
+        <br>
+        <br>
+        A través de la ética, responsabilidad y empeño, hemos buscado proveer soluciones con materiales y equipo de ferretería, nacionales e internacionales, con el objetivo de proporcionar calidad y variedad a nuestros clientes.
+        <br>
+        <br>
+        Nuestro mayor compromiso es satisfacer las necesidades de nuestra cartera de clientes, mediante el trabajo en equipo, el respeto y un ambiente profesional, no solo entregando satisfacción a través de nuestro servicio, pero de igual forma, procurando el crecimiento y desarrollo personal y laboral de nuestro equipo de trabajo.</p>
+    </div>
+    
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <center><h1 class="w3-text-teal">Mision</h1></center>
+      <p>Proveer soluciones con materiales y herramientas de ferretería de productos
+        nacionales e importados, para satisfacer las necesidades de nuestros clientes
+        brindando un servicio oportuno y de alta calidad, manejando un extenso surtido,
+        ofreciendo la mejor atención posible a los clientes a través de un personal
+        altamente capacitado, eficiente y responsable</p>
+    </div>
+    
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <center><h1 class="w3-text-teal">Vision</h1></center>
+      <p>Ser reconocida como una empresa competitiva, honesta y en constante
+        crecimiento que ofrece productos de calidad para cubrir todas las expectativas y
+        necesidades del cliente y proveedores, buscando siempre la innovación y
+        respondiendo a los retos del mercado, ofreciendo al mismo tiempo el mejor lugar para trabajar</p>
+    </div>
+   
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <center><h1 class="w3-text-teal">Valores</h1></center>
+      <p>	
+        Honestidad
+        <br>
+        Ética
+        <br>
+        Lealtad
+        <br>
+        Compromiso
+        <br>
+        Respeto
+        <br>
+        Gratitud
+        <br>
+        Responsabilidad
+        <br>
+        Empatía</p>
+    </div>
+   
+  </div>
+
+  <!-- Pagination -->
+
+  <div class="w3-black w3-center w3-padding-24">Hecho por<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> Elder Solis</a>
+    <br>
+    <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+  </div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
